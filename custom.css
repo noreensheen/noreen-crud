@@ -1,0 +1,47 @@
+.navbar-custom {
+    width: 250px;
+    height: 100vh;
+    overflow: auto;
+    background-color: Purple;    
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+.navbar-custom .nav-item a {
+    color: #fff;
+    
+}   
+.navbar-custom .nav-item:hover, 
+.active {
+    background-color: #fff;
+    transition: 0.25s;
+}
+.navbar-custom .nav-item:hover a,
+.active a{
+    color: #000000!important;
+}
+
+main {
+    flex: 1;
+}
+
+#showHide {
+    display: none;
+}
+
+@keyframes mymove {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #showHide {
+        display: block;
+    }
+}
